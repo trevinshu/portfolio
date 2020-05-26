@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$Primary-Color: #1A2639;
+$Secondary-Color: #D9DAD7;
+$Accent-Color: #C24D2C;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    background-color: $Secondary-Color;
+
+    header {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 3rem;
+            width: 100vw;
+            background-color: $Primary-Color;
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            img {
+                max-height: 5rem;
+            }
+
+            ul {
+                display: flex;
+
+                li:first-of-type {
+                    padding-right: 2rem;
+                }
+
+                li {
+                    list-style: none;
+
+                    a {
+                        font-size: 1.6rem;
+                        color: $Secondary-Color;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        color: $Accent-Color;
+                        transition: all ease-in 0.3s;
+                    }
+                }
+            }
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0, 0.8)), url(../img/banner-1920.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .banner-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h1 {
+                    font-size: 5rem;
+                    font-weight: 900;
+                    color: $Secondary-Color;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 1rem;
+                }
+
+                p {
+                    text-align: center;
+                    font-size: 1.6rem;
+                    color: $Secondary-Color;
+                    font-weight: 300;
+                    letter-spacing: 0.3rem;
+                    text-transform: capitalize;
+
+                    span {
+                        color: $Accent-Color;
+                        font-weight: 700;
+                    }
+                }
+
+                a {
+                    text-align: center;
+                    margin-top: 2rem;
+                    background-color: $Primary-Color;
+                    padding: 1.6rem;
+                    border-radius: 0.5rem;
+                    color: $Secondary-Color;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }
+
+                a:hover {
+                    background-color: $Accent-Color;
+                    transition: all ease-in 0.3s;
+                }
+            }
+        }
+    }
+
+    main {
+        #projects {
+            margin-bottom: 4rem;
+            
+            h2 {
+                font-size: 3.6rem;
+                text-align: center;
+                padding: 4rem 0;
+                text-transform: uppercase;
+                color: $Primary-Color;
+                letter-spacing: 1rem;
+            }
+
+            .project-divs {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 4rem;
+
+                .project-tile {
+                    flex: 1 1 33.333%;
+                    margin: 0 5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 5px 0px #000000;
+
+                    a {
+                        font-size: 1.6rem;
+                        text-decoration: none;
+                        text-align: center;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        color: $Accent-Color;
+                    }
+                }
+
+                .project-tile:first-of-type {
+                    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0, 0.8)), url(../img/premium-laptops-product-landing-page-screenshot.png);
+                    background-position: top center;
+                    background-size: cover;
+                    height: 50vh;
+                }
+
+                .project-tile:nth-of-type(2) {
+                    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/screencapture-127-0-0-1-5500-2020-05-25-20_39_43.png);
+                    background-position: top center;
+                    background-size: cover;
+                    height: 50vh;
+                }
+
+                .project-tile:last-of-type {
+                    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../img/technical-documentation-page.png);
+                    background-position: top center;
+                    background-size: cover;
+                    height: 50vh;
+                }
+
+                .project-tile:nth-of-type(2):hover {
+                    background-position: bottom center;
+                    transition: all 1s;
+                }
+
+                .project-tile:first-of-type:hover {
+                    background-position: bottom center;
+                    transition: all 1s;
+                }
+
+                .project-tile:last-of-type {
+                    background-position: bottom center;
+                    transition: all 1s;
+                }
+            }
+            .btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                #profile-link {
+                    text-align: center;
+                    margin-top: 2rem;
+                    background-color: $Primary-Color;
+                    padding: 1.6rem;
+                    border-radius: 0.5rem;
+                    color: $Secondary-Color;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                }
+    
+                #profile-link:hover {
+                    background-color: $Accent-Color;
+                    transition: all ease-in 0.3s;
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $Primary-Color;
+
+        #contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 0;
+
+            div {
+                h2 {
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $Accent-Color;
+                    font-size: 1.6rem;
+                    padding-bottom: 0.5rem;
+                }
+
+                h2:nth-of-type(2), h2:last-of-type {
+                    padding-top: 0.5rem;
+                }
+
+                input {
+                    max-width: 50vw;
+                    min-width: 50vw;
+                    height: 3rem;
+                    border: none;
+                    border-radius: 0.5rem;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                }
+
+                textarea {
+                    width: 50vw;
+                    border: none;
+                    border-radius: 0.5rem;
+                    resize: none;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        main {
+            #projects {
+                .project-divs {
+                    flex-wrap: wrap;
+
+                    .project-tile {
+                        margin: 0 2rem;
+                    }
+
+                    .project-tile:last-of-type {
+                        margin-top: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        main {
+            #projects {
+                .project-divs {
+
+                    .project-tile {
+                        flex: 1 1 100%;
+                    }
+
+                    .project-tile:first-of-type {
+                        margin-bottom: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        header {
+            nav {
+                ul {
+                    li {
+                        a {
+                            font-size: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

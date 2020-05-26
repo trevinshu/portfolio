@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  background-color: #D9DAD7;
+}
+
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  width: 100vw;
+  background-color: #1A2639;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body header nav img {
+  max-height: 5rem;
+}
+
+body header nav ul {
+  display: flex;
+}
+
+body header nav ul li:first-of-type {
+  padding-right: 2rem;
+}
+
+body header nav ul li {
+  list-style: none;
+}
+
+body header nav ul li a {
+  font-size: 1.6rem;
+  color: #D9DAD7;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+body header nav ul li a:hover {
+  text-decoration: underline;
+  color: #C24D2C;
+  transition: all ease-in 0.3s;
+}
+
+body header .banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/banner-1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body header .banner .banner-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body header .banner .banner-text h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #D9DAD7;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+}
+
+body header .banner .banner-text p {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #D9DAD7;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  text-transform: capitalize;
+}
+
+body header .banner .banner-text p span {
+  color: #C24D2C;
+  font-weight: 700;
+}
+
+body header .banner .banner-text a {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #1A2639;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  color: #D9DAD7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+body header .banner .banner-text a:hover {
+  background-color: #C24D2C;
+  transition: all ease-in 0.3s;
+}
+
+body main #projects {
+  margin-bottom: 4rem;
+}
+
+body main #projects h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  padding: 4rem 0;
+  text-transform: uppercase;
+  color: #1A2639;
+  letter-spacing: 1rem;
+}
+
+body main #projects .project-divs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+
+body main #projects .project-divs .project-tile {
+  flex: 1 1 33.333%;
+  margin: 0 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 0px #000000;
+}
+
+body main #projects .project-divs .project-tile a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #C24D2C;
+}
+
+body main #projects .project-divs .project-tile:first-of-type {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/premium-laptops-product-landing-page-screenshot.png);
+  background-position: top center;
+  background-size: cover;
+  height: 50vh;
+}
+
+body main #projects .project-divs .project-tile:nth-of-type(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/screencapture-127-0-0-1-5500-2020-05-25-20_39_43.png);
+  background-position: top center;
+  background-size: cover;
+  height: 50vh;
+}
+
+body main #projects .project-divs .project-tile:last-of-type {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/technical-documentation-page.png);
+  background-position: top center;
+  background-size: cover;
+  height: 50vh;
+}
+
+body main #projects .project-divs .project-tile:nth-of-type(2):hover {
+  background-position: bottom center;
+  transition: all 1s;
+}
+
+body main #projects .project-divs .project-tile:first-of-type:hover {
+  background-position: bottom center;
+  transition: all 1s;
+}
+
+body main #projects .project-divs .project-tile:last-of-type {
+  background-position: bottom center;
+  transition: all 1s;
+}
+
+body main #projects .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body main #projects .btn #profile-link {
+  text-align: center;
+  margin-top: 2rem;
+  background-color: #1A2639;
+  padding: 1.6rem;
+  border-radius: 0.5rem;
+  color: #D9DAD7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+body main #projects .btn #profile-link:hover {
+  background-color: #C24D2C;
+  transition: all ease-in 0.3s;
+}
+
+body footer {
+  background-color: #1A2639;
+}
+
+body footer #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+body footer #contact div h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #C24D2C;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+
+body footer #contact div h2:nth-of-type(2), body footer #contact div h2:last-of-type {
+  padding-top: 0.5rem;
+}
+
+body footer #contact div input {
+  max-width: 50vw;
+  min-width: 50vw;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+body footer #contact div textarea {
+  width: 50vw;
+  border: none;
+  border-radius: 0.5rem;
+  resize: none;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  body main #projects .project-divs {
+    flex-wrap: wrap;
+  }
+  body main #projects .project-divs .project-tile {
+    margin: 0 2rem;
+  }
+  body main #projects .project-divs .project-tile:last-of-type {
+    margin-top: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body main #projects .project-divs .project-tile {
+    flex: 1 1 100%;
+  }
+  body main #projects .project-divs .project-tile:first-of-type {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body header nav ul li a {
+    font-size: 1rem;
+  }
+}
